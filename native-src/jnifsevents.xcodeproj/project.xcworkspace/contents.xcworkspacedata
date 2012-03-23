@@ -2,15 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../NativeFSEvents.c">
-   </FileRef>
-   <FileRef
-      location = "group:../org_vaadin_jonatan_autorefresher_NativeFSEvents_NativeFSEventListener.h">
-   </FileRef>
-   <FileRef
-      location = "group:../org_vaadin_jonatan_autorefresher_NativeFSEvents.h">
-   </FileRef>
-   <FileRef
       location = "self:jnifsevents.xcodeproj">
    </FileRef>
 </Workspace>
