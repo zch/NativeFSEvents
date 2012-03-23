@@ -1,0 +1,243 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E4B7DB4149B34B600BDD05F /* NativeFSEvents.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E4B7DB3149B34B600BDD05F /* NativeFSEvents.c */; };
+		8E9AFBB014A37D470080F830 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9AFBAD14A37D470080F830 /* CoreFoundation.framework */; };
+		8E9AFBB114A37D470080F830 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9AFBAE14A37D470080F830 /* CoreServices.framework */; };
+		8E9AFBB214A37D470080F830 /* JavaVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9AFBAF14A37D470080F830 /* JavaVM.framework */; };
+		8EA870F2149A343E003D42E7 /* FSEventHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EA870F1149A343E003D42E7 /* FSEventHandler.c */; };
+		8EA870F5149A348B003D42E7 /* FSEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA870F4149A348B003D42E7 /* FSEventHandler.h */; };
+		8EA870FA149B3445003D42E7 /* org_vaadin_jonatan_nativefsevents_NativeFSEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA870F8149B3445003D42E7 /* org_vaadin_jonatan_nativefsevents_NativeFSEvents.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E4B7DB3149B34B600BDD05F /* NativeFSEvents.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = NativeFSEvents.c; path = jnifsevents.xcodeproj/../NativeFSEvents.c; sourceTree = "<group>"; };
+		8E9AFBAD14A37D470080F830 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		8E9AFBAE14A37D470080F830 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		8E9AFBAF14A37D470080F830 /* JavaVM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaVM.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/JavaVM.framework; sourceTree = DEVELOPER_DIR; };
+		8EA870E2149A326A003D42E7 /* libnativefsevents.jnilib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libnativefsevents.jnilib; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EA870F1149A343E003D42E7 /* FSEventHandler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FSEventHandler.c; sourceTree = "<group>"; };
+		8EA870F4149A348B003D42E7 /* FSEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSEventHandler.h; sourceTree = "<group>"; };
+		8EA870F8149B3445003D42E7 /* org_vaadin_jonatan_nativefsevents_NativeFSEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = org_vaadin_jonatan_nativefsevents_NativeFSEvents.h; path = jnifsevents.xcodeproj/../org_vaadin_jonatan_nativefsevents_NativeFSEvents.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EA870DF149A326A003D42E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E9AFBB014A37D470080F830 /* CoreFoundation.framework in Frameworks */,
+				8E9AFBB114A37D470080F830 /* CoreServices.framework in Frameworks */,
+				8E9AFBB214A37D470080F830 /* JavaVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EA870D7149A326A003D42E7 = {
+			isa = PBXGroup;
+			children = (
+				8E9AFBAD14A37D470080F830 /* CoreFoundation.framework */,
+				8E9AFBAE14A37D470080F830 /* CoreServices.framework */,
+				8E9AFBAF14A37D470080F830 /* JavaVM.framework */,
+				8E4B7DB3149B34B600BDD05F /* NativeFSEvents.c */,
+				8EA870F8149B3445003D42E7 /* org_vaadin_jonatan_nativefsevents_NativeFSEvents.h */,
+				8EA870F4149A348B003D42E7 /* FSEventHandler.h */,
+				8EA870F1149A343E003D42E7 /* FSEventHandler.c */,
+				8EA870E3149A326A003D42E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EA870E3149A326A003D42E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EA870E2149A326A003D42E7 /* libnativefsevents.jnilib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8EA870E0149A326A003D42E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EA870F5149A348B003D42E7 /* FSEventHandler.h in Headers */,
+				8EA870FA149B3445003D42E7 /* org_vaadin_jonatan_nativefsevents_NativeFSEvents.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8EA870E1149A326A003D42E7 /* jnifsevents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EA870E6149A326A003D42E7 /* Build configuration list for PBXNativeTarget "jnifsevents" */;
+			buildPhases = (
+				8EA870DE149A326A003D42E7 /* Sources */,
+				8EA870DF149A326A003D42E7 /* Frameworks */,
+				8EA870E0149A326A003D42E7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jnifsevents;
+			productName = jnifsevents;
+			productReference = 8EA870E2149A326A003D42E7 /* libnativefsevents.jnilib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EA870D9149A326A003D42E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = n/a;
+			};
+			buildConfigurationList = 8EA870DC149A326A003D42E7 /* Build configuration list for PBXProject "jnifsevents" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8EA870D7149A326A003D42E7;
+			productRefGroup = 8EA870E3149A326A003D42E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EA870E1149A326A003D42E7 /* jnifsevents */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EA870DE149A326A003D42E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EA870F2149A343E003D42E7 /* FSEventHandler.c in Sources */,
+				8E4B7DB4149B34B600BDD05F /* NativeFSEvents.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8EA870E4149A326A003D42E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/System/Library/Frameworks/JavaVM.framework/Headers/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreFoundation,
+				);
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		8EA870E5149A326A003D42E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/System/Library/Frameworks/JavaVM.framework/Headers/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"-framework",
+					CoreFoundation,
+				);
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		8EA870E7149A326A003D42E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_EXTENSION = jnilib;
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = nativefsevents;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8EA870E8149A326A003D42E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EXECUTABLE_EXTENSION = jnilib;
+				EXECUTABLE_PREFIX = lib;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = nativefsevents;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EA870DC149A326A003D42E7 /* Build configuration list for PBXProject "jnifsevents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EA870E4149A326A003D42E7 /* Debug */,
+				8EA870E5149A326A003D42E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EA870E6149A326A003D42E7 /* Build configuration list for PBXNativeTarget "jnifsevents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EA870E7149A326A003D42E7 /* Debug */,
+				8EA870E8149A326A003D42E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EA870D9149A326A003D42E7 /* Project object */;
+}
