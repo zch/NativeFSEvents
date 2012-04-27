@@ -10,7 +10,7 @@
 #include "FSEventHandler.h"
 #include "org_vaadin_jonatan_nativefsevents_NativeFSEvents.h"
 
-#define DEBUG
+//#define DEBUG
 
 #ifdef DEBUG
 #define LOG(x) fprintf(stderr, x)
