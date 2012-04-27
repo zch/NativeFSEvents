@@ -12,7 +12,7 @@ extern "C" {
  * Method:    monitor
  * Signature: (Ljava/lang/String;)J
  */
-JNIEXPORT jlong JNICALL Java_org_vaadin_jonatan_nativefsevents_NativeFSEvents_monitor
+JNIEXPORT void JNICALL Java_org_vaadin_jonatan_nativefsevents_NativeFSEvents_monitor
   (JNIEnv *, jclass, jstring);
 
 /*
@@ -21,7 +21,7 @@ JNIEXPORT jlong JNICALL Java_org_vaadin_jonatan_nativefsevents_NativeFSEvents_mo
  * Signature: (J)V
  */
 JNIEXPORT void JNICALL Java_org_vaadin_jonatan_nativefsevents_NativeFSEvents_unmonitor
-  (JNIEnv *, jclass, jlong);
+  (JNIEnv *, jclass, jstring);
 
 #ifdef __cplusplus
 }

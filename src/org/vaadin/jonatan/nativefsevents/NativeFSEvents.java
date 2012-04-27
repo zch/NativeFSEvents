@@ -5,14 +5,12 @@ import java.util.Map.Entry;
 
 public class NativeFSEvents {
 	private final String path;
-	private long monitorId;
 	private NativeFSEventListener listener;
 
-	private static native long monitor(String path);
-	private static native void unmonitor(long monitorId);
+	private static native void monitor(String path);
+	private static native void unmonitor(String path);
 
-	private static HashMap<String, Long> pathToId = new HashMap<String, Long>();
-	private static HashMap<Long, NativeFSEventListener> idToListener = new HashMap<Long, NativeFSEventListener>();
+	private static HashMap<String, NativeFSEventListener> pathToListener = new HashMap<String, NativeFSEventListener>();
 	
 	static {
 		System.loadLibrary("nativefsevents");
@@ -24,31 +22,23 @@ public class NativeFSEvents {
 	}
 	
 	public void startMonitoring() {
-		monitorId = monitor(path);
-		pathToId.put(path, monitorId);
-		idToListener.put(monitorId, listener);
+		monitor(path);
+		pathToListener.put(path, listener);
 	}
 	
 	public void stopMonitoring() {
-		unmonitor(monitorId);
-		String path = null;
-		for (String p : pathToId.keySet()) {
-			if (pathToId.get(p) == monitorId) {
-				path = p;
-				break;
-			}
-		}
-		pathToId.remove(path);
-		idToListener.remove(monitorId);
+		unmonitor(path);
+		pathToListener.remove(path);
 	}
 	
 	public static void eventCallback(String path) {
 		if (path == null) {
 			return;
 		}
-		for (Entry<String, Long> entry : pathToId.entrySet()) {
-			if (path.startsWith(entry.getKey()) && idToListener.get(entry.getValue()) != null) {
-				idToListener.get(entry.getValue()).pathModified(path);
+
+		for (Entry<String, NativeFSEventListener> entry : pathToListener.entrySet()) {
+			if (path.startsWith(entry.getKey())) {
+				entry.getValue().pathModified(path);
 			}
 		}
 	}
